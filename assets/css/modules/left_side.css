@@ -1,0 +1,213 @@
+.left_side {
+    background-color: var(--card-background);
+    width: 804px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-border-radius);
+}
+
+.left_side .profil_start {
+    width: 100%;
+}
+
+.left_side .profil_start .img-back {
+    width: 100%;
+    height: 201px;
+    background-image: url(../../img/img-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+}
+
+.left_side .profil-desc {
+    padding: 4rem 1.5rem 0;
+}
+
+.left_side .profil-desc .container{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+
+.left_side .profil-desc .profil .nom p {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgb(0 0 0/.9);
+}
+
+.left_side .profil-desc .profil .desc p {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(0 0 0/.9);
+}
+
+.left_side .profil-desc .profil .desc p br {
+    display: none;
+}
+
+.left_side .profil-desc .nom_ecole {
+    display: none;
+}
+
+.left_side .profil-desc .nom_ecole a {
+    text-transform: uppercase;
+    color: rgb(0 0 0/.6);
+    font-size: 14px;
+    line-height: 17.5px;
+}
+
+.left_side .profil-desc .nom_ecole a:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+
+.left_side .profil-desc .profil .coordonnes p {
+    font-size: 14px;
+    line-height: 17.5px;
+    color: rgb(0 0 0/.6);
+    margin-top: 8px;
+}
+
+.left_side .profil-desc .profil .coordonnes a {
+    color: #0a66c2;
+}
+
+.left_side .profil-desc .profil .coordonnes a:hover {
+    color: #004182;
+    text-decoration: underline;
+}
+
+.left_side .profil-desc .ecole {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.left_side .profil-desc .ecole img {
+    width: 32px;
+}
+
+.left_side .profil-desc .ecole a {
+    font-size: 14px;
+    line-height: 17.5px;
+    text-transform: uppercase;
+}
+
+.left_side .profil-desc .ecole a:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+
+.left_side .profil-desc .relation {
+    display: flex;
+}
+
+.left_side .profil-desc .relation a {
+    color: #0a66c2;
+    font-size: 14px;
+    line-height: 17.5px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.left_side .profil-desc .relation a:hover {
+    text-decoration: underline;
+    color: #004182;
+}
+
+.left_side .profil-desc .btns {
+    display: flex;
+    gap: .5rem;
+    margin-top: .5rem;
+}
+
+.left_side .profil-desc .btns a {
+    border-radius: 999px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 6px 16px;
+    font-weight: 500;
+}
+
+.left_side .profil-desc .btns a:nth-child(1) {
+    background-color: #0a66c2;
+    color: #fff;
+}
+.left_side .profil-desc .btns a:nth-child(1):hover {
+    background-color: #004182;
+}
+
+.left_side .profil-desc .btns a:nth-child(2) {
+    color: #0a66c2;
+    border: 1px solid #0a66c2;
+}
+.left_side .profil-desc .btns a:nth-child(2):hover {
+    background-color: #70b4f931;
+    outline: 1px solid #0a66c2;
+}
+
+.left_side .profil-desc .btns a:nth-child(3) {
+    color: rgb(0 0 0/.6);
+    border: 1px solid rgb(0 0 0/.6);
+}
+.left_side .profil-desc .btns a:nth-child(3):hover {
+    background-color: rgb(0 0 0/.08);
+    outline: 1px solid rgb(0 0 0/.6);
+}
+
+.carousel {
+    padding: 1.5rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    .left_side {
+        width: 636px;
+    }
+
+    .left_side .profil_start .img-back {
+        height: 159px;
+    }
+
+    .left_side .profil-desc .container {
+        gap: 4rem;
+    }
+
+    .left_side .profil-desc .profil .desc p br {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+
+    .left_side {
+        width: 396px;
+    }
+
+    .left_side .profil_start .img-back {
+        height: 99px;
+    }
+
+    .left_side .profil-desc .container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .left_side .profil-desc .nom_ecole {
+        display: block;
+    }
+
+    .left_side .profil-desc .container .ecole {
+        display: none;
+    }
+
+    .left_side .profil-desc .container .ecole a {
+        color: rgb(0 0 0/.6);
+    }
+}

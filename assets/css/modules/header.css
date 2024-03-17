@@ -1,0 +1,129 @@
+header {
+    z-index: 105;
+    background-color: var(--header-background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: var(--header-padding);
+    border-bottom: var(--header-border-bottom);
+}
+
+header .container {
+    max-width: 1128px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .nav-left label {
+    height: 34px;
+    background-color: #edf3f8;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    line-height: 1.75;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    margin-left: 1rem;
+    cursor: text;
+}
+
+header .nav-left input {
+    width: 100%;
+    line-height: 1.75;
+    font-size: 14px;
+    height: 34px;
+    width: 335px;
+    background-color: #edf3f8;
+    border: 0;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+header img {
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: rgb(0 0 0/.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    padding: 5.5px 0;
+}
+
+header nav a:hover {
+    color: rgb(0 0 0/.9);
+}
+
+header nav a i {
+    font-size: 1.3rem;
+    padding: 0 30px;
+}
+
+header nav .entreprises {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    cursor: pointer;
+    border-left: 1px solid rgb(140 140 140/.2);
+    padding: 0 12px;
+}
+
+header nav .entreprises .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+header nav .entreprises i {
+    color: rgb(0 0 0/.6);
+    font-size: 1.3rem;
+    padding: 0 30px;
+}
+
+header nav .entreprises .text p {
+    font-size: 12px;
+    color: rgb(0 0 0/.6);
+}
+
+header nav .entreprises .text i {
+    padding: 0;
+    font-size: 1rem;
+}
+
+header nav .prenium a {
+    padding: .5rem .5rem 0;
+    color: #5c3b09;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+/* @media screen and (max-width: 1150px) {
+    header .nav-left input {
+        display: none;
+    }
+} */

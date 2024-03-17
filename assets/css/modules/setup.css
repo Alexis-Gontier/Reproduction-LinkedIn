@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    /* body */
+    --background-color: #f4f2ee;
+    --font-weight: 400;
+    --font-size: 1.6rem;
+    --line-height: 1.5;
+    --color: rgba(0 0 0 0.9);
+    --font-family: "Roboto", sans-serif;;
+
+    /* header */
+    --header-background-color: #fff;
+    --header-padding: 0 2.4rem;
+    --header-border-bottom: 1px solid rgb(140 140 140/.2);
+
+    /* MAIN CARD */
+    --border-color: rgb(140 140 140/.2);
+    --card-background: #fff;
+    --card-border-radius: .8rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--color);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    overflow-y: scroll;
+}
+
+p {
+    color: rgb(0 0 0/.9);
+}
+
+main {
+    min-height: 100vh;
+    padding-top: calc(52px + 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 2.4rem ;
+}
